@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="data:,">
+    <link href="CssContent/MainCSS.css" rel="stylesheet" />
+    <link href="CssContent/SegmentsAndDigits.css" rel="stylesheet" />
+
+    <link href="CssContent/Switch_12_24.css" rel="stylesheet" />
+
+    <link href="CssContent/DigitsDisplayControl.css" rel="stylesheet" />
+
+    <link href="CssContent/CheckBoxToggler.css" rel="stylesheet" />
+
+    <link href="CssContent/DigitalClock.css" rel="stylesheet" />
+
+    <link href="CssContent/AnalogClockTwo.css" rel="stylesheet" />
+
+    <link href="CssContent/AnalogClockTwoHands.css" rel="stylesheet" />
+
+    <link href="CssContent/AnalogClockTwoAlarmDisplay.css" rel="stylesheet" />
+
+    <link href="CssContent/SwitchAlarmOnOff.css" rel="stylesheet" />
+
+    <link href="CssContent/RangeSlider.css" rel="stylesheet" />
+
+    <link href="CssContent/GenericStyles.css" rel="stylesheet" />
+
+    <title>My clocks</title>
+</head>
+
+<body>
+    <div class="wide-background-container" id="outerMostContainer">
+        <div class="centered-container" id="centeredContainer">
+                <div class="button-holder-section">
+                    <button class="buttons" id="btnStartStopClocks" type="button">|</button>
+                    <button class="buttons" id="btnLightOnOff" type="button">|</button>
+                    <button class="buttons" id="btnStartStopRegularTorch" type="button">|</button>
+                    <select id="languageOptions" class="lang-options-drd">
+                        <option value="--">--</option>
+                    </select>
+                </div>
+            <div class="clock-1-container digital-clock-1-width digital-clock-1-top-margin">
+                <div class="clock-1-container-inner-wrapper-front">
+                    <div class="clock-1-digits-panel">
+                        <div class="digits-pair-container">
+                            <div class="digit-container">
+                                <div id="clock-1-hrs-left-digit" class="display-numb-None">
+                                    <div class="digit-outer-wrapper">
+                                        <div class="horizontal-top-segment-a clock-1-segments-color segment-a-margin-bottom-offset"></div>
+                                        <div class="midd-top-segments-wrapper">
+                                            <div class="vert-left-segment-f vert-right-segment-b clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-segment-g-wrapper"><div class="horizontal-segment-g clock-1-segments-color"></div></div>
+                                        <div class="midd-bottom-segments-wrapper">
+                                            <div class="vert-left-segment-e vert-right-segment-c clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-bottom-segment-d clock-1-segments-color segment-d-margin-top-offset"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="digit-container">
+                                <div id="clock-1-hrs-right-digit" class="display-numb-None">
+                                    <div class="digit-outer-wrapper">
+                                        <div class="horizontal-top-segment-a clock-1-segments-color segment-a-margin-bottom-offset"></div>
+                                        <div class="midd-top-segments-wrapper">
+                                            <div class="vert-left-segment-f vert-right-segment-b clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-segment-g-wrapper"><div class="horizontal-segment-g clock-1-segments-color"></div></div>
+                                        <div class="midd-bottom-segments-wrapper">
+                                            <div class="vert-left-segment-e vert-right-segment-c clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-bottom-segment-d clock-1-segments-color segment-d-margin-top-offset"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="clocksLeftDotsWrapper" class="dots-container-flex-version position-z-index dim-dots">
+                            <div class="top-dot"></div>
+                            <div class="bottom-dot"></div>
+                        </div>
+                        <div class="digits-pair-container">
+                            <div class="digit-container">
+                                <div id="clock-1-mins-left-digit" class="display-numb-None">
+                                    <div class="digit-outer-wrapper">
+                                        <div class="horizontal-top-segment-a clock-1-segments-color clock-1-segments-color segment-a-margin-bottom-offset"></div>
+                                        <div class="midd-top-segments-wrapper">
+                                            <div class="vert-left-segment-f vert-right-segment-b clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-segment-g-wrapper"><div class="horizontal-segment-g clock-1-segments-color"></div></div>
+                                        <div class="midd-bottom-segments-wrapper">
+                                            <div class="vert-left-segment-e vert-right-segment-c clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-bottom-segment-d clock-1-segments-color segment-d-margin-top-offset"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="digit-container">
+                                <div id="clock-1-mins-right-digit" class="display-numb-None">
+                                    <div class="digit-outer-wrapper">
+                                        <div class="horizontal-top-segment-a clock-1-segments-color clock-1-segments-color segment-a-margin-bottom-offset"></div>
+                                        <div class="midd-top-segments-wrapper">
+                                            <div class="vert-left-segment-f vert-right-segment-b clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-segment-g-wrapper"><div class="horizontal-segment-g clock-1-segments-color"></div></div>
+                                        <div class="midd-bottom-segments-wrapper">
+                                            <div class="vert-left-segment-e vert-right-segment-c clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-bottom-segment-d clock-1-segments-color segment-d-margin-top-offset"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots-container-spacer-version">
+                            <div id="clocksRightDotsWrapper" class="position-z-index dim-dots">
+                                <div class="top-dot"></div>
+                                <div class="dots-vert-spacer"></div>
+                                <div class="bottom-dot"></div>
+                            </div>
+                        </div>
+                        <div class="digits-pair-container">
+                            <div class="digit-container">
+                                <div id="clock-1-seconds-left-digit" class="display-numb-None">
+                                    <div class="digit-outer-wrapper">
+                                        <div class="horizontal-top-segment-a clock-1-segments-color segment-a-margin-bottom-offset"></div>
+                                        <div class="midd-top-segments-wrapper">
+                                            <div class="vert-left-segment-f vert-right-segment-b clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-segment-g-wrapper"><div class="horizontal-segment-g clock-1-segments-color"></div></div>
+                                        <div class="midd-bottom-segments-wrapper">
+                                            <div class="vert-left-segment-e vert-right-segment-c clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-bottom-segment-d clock-1-segments-color segment-d-margin-top-offset"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="digit-container">
+                                <div id="clock-1-seconds-right-digit" class="display-numb-None">
+                                    <div class="digit-outer-wrapper">
+                                        <div class="horizontal-top-segment-a clock-1-segments-color segment-a-margin-bottom-offset"></div>
+                                        <div class="midd-top-segments-wrapper">
+                                            <div class="vert-left-segment-f vert-right-segment-b clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-segment-g-wrapper"><div class="horizontal-segment-g clock-1-segments-color"></div></div>
+                                        <div class="midd-bottom-segments-wrapper">
+                                            <div class="vert-left-segment-e vert-right-segment-c clock-1-segments-color"></div>
+                                        </div>
+                                        <div class="horizontal-bottom-segment-d clock-1-segments-color segment-d-margin-top-offset"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clocks-am-pm-indicator-panel">
+                        <div class="indicator-border-wrapper-a indicator-border-wrapper-a-width">
+                            <div id="clocksAmIndicator" class="indicator-wrapper-a position-z-index set-inactive">
+                                <span class="span-centered-generic font-size-08-bold dim-am-pm-indicator">AM</span>
+                            </div>
+                        </div>
+                        <!--<div class="am-pm-vert-spacer"></div>-->
+                        <div class="indicator-border-wrapper-a indicator-border-wrapper-a-width">
+                            <div id="clocksPmIndicator" class="indicator-wrapper-a position-z-index set-inactive">
+                                <span class="span-centered-generic font-size-08-bold dim-am-pm-indicator">PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="digital-clock-alarm-panel">
+                        <div class="alarm-panel-top-marks">
+                            <div class="indicator-border-wrapper-b">
+                                <div class="top-mark-off set-inactive" id="alarmOffMark">OFF</div>
+                            </div>
+                            <div class="indicator-border-wrapper-b">
+                                <div class="top-mark-alarm set-inactive" id="alarmMark">ALARM</div>
+                            </div>
+                            <div class="indicator-border-wrapper-b">
+                                <div class="top-mark-on set-inactive" id="alarmOnMark">ON</div>
+                            </div>
+                        </div>
+                        <div class="alarm-snooze-wrapper center-switch">
+                            <div class="alarm-on-off-snooze-panel">
+                                <div class="alarm-on-off-checkbox-panel">
+                                    <div class="toggler-top-wrapper">
+                                        <div class="toggler-top">
+                                            <div class="alarm-switch" id="digitalAlarmOnOffSwitch">
+                                                <input id="digitalOffSwitch" name="digitalAlarmSwitch" type="radio">
+                                                <label for="digitalOffSwitch">OFF</label>
+
+                                                <input id="digitalOnSwitch" name="digitalAlarmSwitch" type="radio">
+                                                <label for="digitalOnSwitch">ON</label>
+
+                                                <span class="switch-button"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alarm-snooze-button-panel">
+                                    <div id="alarmSnoozeBtn" class="alarm-snooze-basic-div-button alarm-snooze-button inactive-bg-color">
+                                        <span id="alarmSnoozeSpan" class="span-centered-generic font-size-062-bold">SNOOZE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--         Digital  Clock One Ends          -->
+            <div class="clock-1-container digital-clock-1-width digital-clock-1-midd-margin">
+                <!--         Digital  Clock One Back Side          -->
+                <div class="clock-1-container-inner-wrapper-back">
+                    <div class="clocks-togglers-panel">
+                        <div class="toggler-top-inner-panel">
+                            <div class="toggler-top-wrapper">
+                                <div class="toggler-top">
+                                    <div class="switch" id="clocks_12_24_Switch">
+                                        <input id="clocks_24_Switch" name="clock_1_12_24" type="radio">
+                                        <label for="clocks_24_Switch">24</label>
+
+                                        <input id="clocks_12_Switch" name="clock_1_12_24" type="radio">
+                                        <label for="clocks_12_Switch">12</label>
+
+                                        <span class="switch-button"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="togglers-vert-spacer"></div>
+                        <div class="toggler-bottom-inner-panel">
+                            <div class="toggler-dots-wrapper"><div id="dotsMark" class="toggler-dots-draw set-inactive"></div></div>
+                            <div class="toggler-checkbox-wrapper"><input id="dotsCheckBoxSwitch" class="checkbox-toggler" type="checkbox"></div>
+                        </div>
+                    </div>
+                    <div class="back-side-mark-centered">
+                        <span class="display-inline-block-span font-size-07-bold">Clock's</span>
+                        <span class="display-inline-block-span font-size-07-bold">Back Side</span>
+                    </div>
+                    <div class="digital-alarm-setter-panel">
+                        <div class="alarm-setter-top-section">
+                            <div class="alarm-setter-top-inner">
+                                <div class="indicator-border-wrapper-b indicator-alarm-setter-width">
+                                    <div id="alarmSetTimeLeftIndicator" class="indicator-wrapper-alarm-setter set-inactive-background-only">
+                                        <span class="span-centered-generic font-size-07-bold">TIME</span>
+                                    </div>
+                                </div>
+                                <div class="indicator-border-wrapper-b indicator-alarm-setter-width">
+                                    <div id="alarmSetHourIndicator" class="indicator-wrapper-alarm-setter set-inactive-background-only">
+                                        <span class="span-centered-generic font-size-07-bold">HR</span>
+                                    </div>
+                                </div>
+                                <div class="indicator-border-wrapper-b indicator-alarm-setter-width">
+                                    <div id="alarmSetMinutesIndicator" class="indicator-wrapper-alarm-setter set-inactive-background-only">
+                                        <span class="span-centered-generic font-size-07-bold">MIN</span>
+                                    </div>
+                                </div>
+                                <div class="indicator-border-wrapper-b indicator-alarm-setter-width">
+                                    <div id="alarmSetTimeRightIndicator" class="indicator-wrapper-alarm-setter set-inactive-background-only">
+                                        <span class="span-centered-generic font-size-07-bold">TIME</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="digital-alarm-setter-bottom-section">
+                            <div class="alarm-setter-bottom-left">
+                                <div class="indicator-border-wrapper-a">
+                                    <div id="alarmSetMainSetterIndicator" class="left-alarm-set-indicator position-z-index set-inactive">
+                                        <span style="display: inline-block;" class="font-size-07-bold">Alarm</span>
+                                        <span style="display: inline-block;" class="font-size-07-bold">Set</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alarm-setter-bottom-midd">
+                                <div class="alarm-setter-range-slider">
+                                    <div class="alarm-setter-range-slider-inner">
+                                        <!--<div class="temp-div-cillinder"></div>-->
+                                        <input type="range" min="0" max="3" value="0" step="1" id="alarmSetterRangeSlider">
+                                    </div>
+                                </div>
+                                <div class="alarm-setter-control-button-panel">
+                                    <input id="alarmSetterSetBtn" type="button" class="alarm-setter-basic-button alarm-setter-main-button" value="SET">
+                                </div>
+                            </div>
+                            <div class="alarm-setter-bottom-right">
+                                <div class="alarm-setter-up-down-buttons">
+                                    <input id="alarmSetterPlusBtn" type="button" class="alarm-setter-basic-button alarm-setter-plus-button" value="+">
+                                    <input id="alarmSetterMinusBtn" type="button" class="alarm-setter-basic-button alarm-setter-minus-button" value="-">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   <!--         Digital  Clock One Back Side Ends            <span class="span-centered-generic font-size-08-bold dim-am-pm-indicator"></span>     -->
+            <!--         Analog Clock Two Section        -->
+            <div class="analog-clock-two-section">
+                <div id="analogAlarmOnOffBtn" class="analog-clock-two-on-off-button">
+                    <div class="analog-clock-two-off"><span class="span-centered-generic">OFF</span></div>
+                    <div class="analog-clock-two-on-off-button-border"></div>
+                    <div class="analog-clock-two-on"><span class="span-centered-generic">ON</span></div>
+                </div>
+                <div class="analog-clock-two-on-off-button-platform"></div>
+                <div class="analog-clock-two-section-inner">
+                    <div class="analog-clock-two-left-panel"></div>
+                    <div class="analog-clock">
+                        <div class="dial-base"></div>
+                        <div class="hand hour" data-hour-hand>
+                            <div class="glowing-in-dark-hand glowing-hour"></div>
+                        </div>
+                        <div class="centered-minute-circle"></div>
+                        <div class="hand minute" data-minute-hand>
+                            <div class="glowing-minutes"></div>
+                        </div>
+                        <div class="hand second seconds-daily-bg-color" data-second-hand></div>
+                        <div class="centered-second-circle seconds-daily-bg-color seconds-z-index-plus-one" data-centered-second-circle></div>
+                        <div class="hand second counter-balance seconds-daily-bg-color" data-second-hand-counter-balance></div>
+                        <div class="hand alarm-hand" id="analogAlarmHand">
+                            <div class="glowing-in-dark-alarm-hand"></div>
+                        </div>
+                        <div class="alarm-hand-circle"></div>
+                        <!---------------------------------------------------------->
+                        <div class="hour-bar bar1"><span></span></div>
+                        <div class="second-bar bar2"><span></span></div>
+                        <div class="second-bar bar3"><span></span></div>
+                        <div class="second-bar bar4"><span></span></div>
+                        <div class="second-bar bar5"><span></span></div>
+                        <div class="number number1"><span>1</span></div>
+                        <div class="hour-bar bar6"><span></span></div>
+                        <div class="second-bar bar7"><span></span></div>
+                        <div class="second-bar bar8"><span></span></div>
+                        <div class="second-bar bar9"><span></span></div>
+                        <div class="second-bar bar10"><span></span></div>
+                        <div class="number number2"><span>2</span></div>
+                        <div class="hour-bar bar11"><span></span></div>
+                        <div class="second-bar bar12"><span></span></div>
+                        <div class="second-bar bar13"><span></span></div>
+                        <div class="second-bar bar14"><span></span></div>
+                        <div class="second-bar bar15"><span></span></div>
+                        <div class="number number3"><span>3</span></div>
+                        <div class="hour-bar bar16"><span></span></div>
+                        <div class="second-bar bar17"><span></span></div>
+                        <div class="second-bar bar18"><span></span></div>
+                        <div class="second-bar bar19"><span></span></div>
+                        <div class="second-bar bar20"><span></span></div>
+                        <div class="number number4"><span>4</span></div>
+                        <div class="hour-bar bar21"><span></span></div>
+                        <div class="second-bar bar22"><span></span></div>
+                        <div class="second-bar bar23"><span></span></div>
+                        <div class="second-bar bar24"><span></span></div>
+                        <div class="second-bar bar25"><span></span></div>
+                        <div class="number number5"><span>5</span></div>
+                        <div class="hour-bar bar26"><span></span></div>
+                        <div class="second-bar bar27"><span></span></div>
+                        <div class="second-bar bar28"><span></span></div>
+                        <div class="second-bar bar29"><span></span></div>
+                        <div class="second-bar bar30"><span></span></div>
+                        <div class="number number6"><span>6</span></div>
+                        <div class="hour-bar bar31"><span></span></div>
+                        <div class="second-bar bar32"><span></span></div>
+                        <div class="second-bar bar33"><span></span></div>
+                        <div class="second-bar bar34"><span></span></div>
+                        <div class="second-bar bar35"><span></span></div>
+                        <div class="number number7"><span>7</span></div>
+                        <div class="hour-bar bar36"><span></span></div>
+                        <div class="second-bar bar37"><span></span></div>
+                        <div class="second-bar bar38"><span></span></div>
+                        <div class="second-bar bar39"><span></span></div>
+                        <div class="second-bar bar40"><span></span></div>
+                        <div class="number number8"><span>8</span></div>
+                        <div class="hour-bar bar41"><span></span></div>
+                        <div class="second-bar bar42"><span></span></div>
+                        <div class="second-bar bar43"><span></span></div>
+                        <div class="second-bar bar44"><span></span></div>
+                        <div class="second-bar bar45"><span></span></div>
+                        <div class="number number9"><span>9</span></div>
+                        <div class="hour-bar bar46"><span></span></div>
+                        <div class="number number10"><span>10</span></div>
+                        <div class="number number11"><span>11</span></div>
+                        <div class="number number12"><span>12</span></div>
+                    </div>  <!-- Analog Clock Two End -->
+                    <div class="analog-clock-two-right-panel">
+                        <div class="analog-alarm-time-display">
+                            <div class="alarm-time-display-left-panel">
+                                <span id="displayAlarmHour" style="font-weight:bold;" class="span-centered-generic"></span>
+                            </div>
+                            <div class="alarm-time-display-midd-panel"></div>
+                            <div class="alarm-time-display-right-panel">
+                                <span id="displayAlarmMinute" style="font-weight:bold;" class="span-centered-generic"></span>
+                            </div>
+                        </div>
+                        <div class="analog-clock-two-right-buttons-panel">
+                            <input id="analogAlarmSetterPlusBtn" type="button" class="analog-alarm-setter-basic-button analog-alarm-setter-plus-button" value="+">
+                            <input id="analogAlarmSetterMinusBtn" type="button" class="analog-alarm-setter-basic-button analog-alarm-setter-minus-button" value="-">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--         Analog Clock Two Section Ends          -->
+            <div class="bottom-content">
+                <div class="notes-section">
+                    <div class="sticky-note visibility-hidden" id="spyNote">
+                        <div class="sticky-note-left-shadow"></div>
+                        <div class="sticky-note-right-shadow"></div>
+                        <div class="sticky-note-inner visibility-hidden" id="selfDestructAlert">
+                        </div>
+                        <div class="sticky-note-inner visibility-hidden" id="spyMessage">
+                            <p class="manual-writing-note">
+                                Martini cocktail is best shaken, not stirred.<br /><br />
+                                Bond, James Bond
+                            </p>
+                        </div>
+                        <div class="sticky-note-inner">
+                            <p id="firstMessage" class="type-writing-note">
+                                Hidden here is a very important advice from one the most famous spies in the world. But you need to use an X-ray torch to uncover it.
+                            </p>
+                        </div>
+                        <div id="burningNoteBase"></div>
+                        <div id="burningNoteSmoke"></div>
+                    </div>
+                </div>
+                <div class="button-holder additional-top-margin">
+                    <button class="buttons opacity-zero visibility-hidden" id="btnStartStopXrayTorch" type="button">X-ray torch on</button>
+                </div>
+            </div>
+            <div id="dmLayer"></div>
+        </div>
+        </div>
+    <script type="module" src="JsContent/MainModule.js"></script>
+</body>
+</html>

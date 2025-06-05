@@ -1,0 +1,162 @@
+﻿
+
+
+.analog-clock .hand {
+    --handsRotationProperty: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--handsRotationProperty) * 1deg));
+    
+}
+
+    .analog-clock .hand.second {
+        width: 3px;
+        height: 35%;
+        z-index: 140;
+    }
+
+        .analog-clock .hand.second.counter-balance {
+            width: 7px;
+            height: 26px;
+            top: 50%;
+            left: 50%;
+            border-radius: 40%;
+            transform-origin: top;
+            z-index: var(--zIndexLevel_14);
+        }
+
+    .analog-clock .hand.alarm-hand {
+        width: 6px;
+        height: 41.3%;
+        transform-origin: bottom;
+        background-color: var(--alarmHandBgColor);
+        z-index: unset;
+        z-index: 110;
+    }
+
+    .analog-clock .hand .glowing-in-dark-alarm-hand {
+        position: absolute;
+        background-color: var(--analogClockGlowingColor);
+        top: 2px;
+        left: 2px;
+        width: 2px;
+        height: 17.2%;
+        border-radius: 2px;
+        z-index: 110;
+    }
+
+.analog-clock .alarm-hand-circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: var(--alarmHandBgColor);
+    z-index: 50;
+}
+
+
+.analog-clock .hand.second.seconds-z-index {
+    z-index: 140;
+}
+
+.analog-clock .centered-second-circle.seconds-z-index-plus-one {
+    z-index: 150;
+}
+
+.analog-clock .centered-second-circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 140;
+}
+
+    .analog-clock .hand.second.seconds-daily-bg-color
+    , .analog-clock .centered-second-circle.seconds-daily-bg-color {
+        background-color: #e35454;
+    }
+
+    .analog-clock .hand.second.seconds-nightly-bg-color
+    , .analog-clock .centered-second-circle.seconds-nightly-bg-color {
+        background-color: rgb(68, 25, 25);
+    }
+
+
+.analog-clock .hand.minute {
+    width: 11px;
+    height: 32%;
+    background-color: black;
+    z-index: 130;
+}
+
+.analog-clock .hand.hour {
+    width: 14px;
+    height: 26%;
+    background-color: black;
+    z-index: 120;
+}
+
+
+.analog-clock .hand .glowing-in-dark-hand {
+    position: absolute;
+    background-color: var(--analogClockGlowingColor);
+    /*            inset: 0;
+            margin: auto;*/
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.glowing-minutes {
+    position: relative;
+    width: 3px;
+    height: 78%;
+    border-radius: 2px;
+    background-color: var(--analogClockGlowingColor);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 130;
+}
+        .analog-clock .hand .glowing-in-dark-hand.glowing-hour {
+            width: 4px;
+            height: 72%;
+            border-radius: 2px;
+            z-index: 110;
+        }
+
+    .analog-clock .hand .glowing-in-dark-hand.glowing-minute {
+        width: 3px;
+        height: 78%;
+        border-radius: 2px;
+        z-index: 120;
+    }
+
+.position-z-index-color {
+    position: relative;
+    z-index: 130;
+    background-color: var(--analogClockGlowingColor);
+}
+
+.analog-clock .centered-minute-circle {
+    position: absolute;
+    background-color: black;
+    width: 21px;
+    height: 21px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: var(--zIndexLevel_8);
+}
+

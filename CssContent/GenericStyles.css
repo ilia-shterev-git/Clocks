@@ -1,0 +1,53 @@
+﻿
+
+
+.additional-top-margin {
+    margin-top:18px;
+}
+
+.active-bg-color {
+    background-color: var(--segmentOneColor);
+}
+
+.inactive-bg-color {
+    background-color: var(--clockOneTogglesLightGreen);
+}
+
+.font-color-segment-color {
+    color: var(--segmentOneColor);
+}
+
+.font-color-black {
+    color: black;
+}
+
+.span-centered-generic-x {
+    /*display: inline-block;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.span-centered-generic {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.font-size-08-bold {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.font-size-062-bold {
+    font-size: 0.62rem;
+    font-weight: bold;
+}
+
+.font-size-07-bold {
+    font-size: 0.7rem;
+    font-weight: bold;
+}

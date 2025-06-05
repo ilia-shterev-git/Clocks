@@ -1,0 +1,96 @@
+﻿
+
+
+.toggler-top-wrapper {
+    background-color: var(--clockOneTogglesBlueishGreenishBorder); /*var(--clockOneBlueishGreenishBorder)*/
+    padding: 3px;
+    border-radius: 10px;
+    width: 92px;
+    height: 28px;
+}
+
+.toggler-top {
+    border-radius: 7px;
+    width: 100%;
+    background-color: var(--clockOneTogglesBeigishMidd);
+    height: 100%;
+}
+
+.switch, .alarm-switch {
+    position: relative;
+    border: 0;
+    padding: 0;
+    width: 82px;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 12px;
+    /*    color: #222;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);*/
+}
+
+    .switch:after, .alarm-switch:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .switch input, .alarm-switch input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .switch label, .alarm-switch label {
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 50%;
+        margin-top: 1px;
+        padding: 3px 0 2px 2px;
+        text-align: center;
+        color: #64676b;
+        /* text-shadow: 0 1px 0 #000;*/
+        cursor: pointer;
+        transition: color 0s ease .1s;
+    }
+
+    .switch input:checked + label {
+        color: #000;
+        /*text-shadow: 0 1px 0 rgba(255, 255, 255, .5);*/
+    }
+
+    .switch input:focus + label {
+        outline: none;
+    }
+
+    .switch .switch-button, .alarm-switch .switch-button {
+        clear: both;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 50%;
+        height: 84%;
+        margin: 2px;
+        background-color: var(--clockOneTogglesLightGreen);
+        /*background-image: linear-gradient(top, rgba(255, 255, 255, .2), rgba(0, 0, 0, 0)); alarm- */
+        border-radius: 5px;
+        /*border: 1px dashed rgba(0, 0, 0, .3);*/
+        box-shadow: 0 0 0 3px var(--clockOneTogglesDarkGreen), -2px 3px 5px #000;
+        transition: all .3s ease-out;
+    }
+
+        /*.switch .switch-button:after {
+            content: " ";
+            position: absolute;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-radius: 5px;*/
+            /*border: 1px dashed #fff;*/
+        /*}*/
+
+    .switch input:last-of-type:checked ~ .switch-button {
+        left: 50%;
+    }

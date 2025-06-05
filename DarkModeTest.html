@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="data:,">
+    <link href="CssContent/MainCSS.css" rel="stylesheet" />
+    <link href="CssContent/SegmentsAndDigits.css" rel="stylesheet" />
+
+    <link href="CssContent/Switch_12_24.css" rel="stylesheet" />
+
+    <link href="CssContent/DigitsDisplayControl.css" rel="stylesheet" />
+
+    <link href="CssContent/CheckBoxToggler.css" rel="stylesheet" />
+
+    <link href="CssContent/DigitalClock.css" rel="stylesheet" />
+
+    <link href="CssContent/AnalogClockTwo.css" rel="stylesheet" />
+
+    <link href="CssContent/AnalogClockTwoHands.css" rel="stylesheet" />
+
+    <link href="CssContent/AnalogClockTwoAlarmDisplay.css" rel="stylesheet" />
+
+    <link href="CssContent/SwitchAlarmOnOff.css" rel="stylesheet" />
+
+    <link href="CssContent/RangeSlider.css" rel="stylesheet" />
+
+    <link href="CssContent/GenericStyles.css" rel="stylesheet" />
+
+    <title>Digital Seven Segment Number</title>
+</head>
+<body>
+    <div class="wide-background-container" id="outerMostContainer">
+        <div class="centered-container" id="centeredContainer">
+            <div class="button-holder-section">
+                <div class="button-holder">
+                    <button class="buttons" id="btnStartStopAnim" type="button">Start Clocks</button>
+                </div>
+                <div class="button-holder">
+                    <button class="buttons" id="btnLightOnOff" type="button">Turn the light off</button>
+                </div>
+                <div class="button-holder">
+                    <button class="buttons" id="btnStartStopRegularTorch" type="button">Turn the torch on</button>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <div class="notes-section">
+                    <div class="sticky-note visibility-hidden" id="spyNote">
+                        <div class="sticky-note-left-shadow"></div>
+                        <div class="sticky-note-right-shadow"></div>
+                        <div class="sticky-note-inner visibility-hidden" id="selfDestructAlert">
+                        </div>
+                        <div class="sticky-note-inner visibility-hidden" id="spyMessage">
+                            <p class="manual-writing-note">
+                                Martini cocktail is best shaken, not stirred.<br /><br />
+                                Bond, James Bond
+                            </p>
+                        </div>
+                        <div class="sticky-note-inner">
+                            <p id="firstMessage" class="type-writing-note">
+                                Hidden here is a vary important advice from one the most famous spies in the world. But you need to use an X-ray torch to see it.
+                            </p>
+                        </div>
+                        <div id="burningNoteBase"></div>
+                        <div id="burningNoteSmoke"></div>
+                    </div>
+                </div>
+                <div class="button-holder">
+                    <button class="buttons opacity-zero visibility-hidden" id="btnStartStopXrayTorch" type="button">Turn the X-ray torch on</button>
+                </div>
+            </div>
+            <div id="dmLayer"></div>
+        </div>
+        <!--<div id="frontShadow" class="front-shadow"> opacity-zero</div>-->
+    </div>
+    <script>
+        /*let burningNote = document.querySelector("div.notes-section div.sticky-note div");*/
+
+        //const burningNoteBase = document.getElementById("burningNoteBase")
+        // ,burningNoteSmoke = document.getElementById("burningNoteSmoke");
+
+        //console.log("burningNote ", burningNote);
+
+        //burningNoteBase.classList.add("burning-note-base");
+        //burningNoteBase.classList.add("burning-note-base-burn");
+
+        //burningNoteSmoke.classList.add("burning-note-smoke");
+        //burningNoteSmoke.classList.add("burning-note-smoke-move");
+
+    </script>
+    <script type="module" src="JsContent/TestModule.js"></script>
+    <!--<script type="module" src="JsContent/MovingRoadAnimation.js"></script>-->
+</body>
+</html>

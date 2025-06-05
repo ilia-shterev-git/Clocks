@@ -1,0 +1,363 @@
+﻿
+
+
+.clock-1-container {
+    --clocksBorderWidth: 8px;
+    --clocksOuterRadius: 14px;
+    background-color: var(--clockOneBackgroundColor);
+    border-top: var(--clocksBorderWidth) solid var(--clockOneTopBorderColor);
+    border-right: var(--clocksBorderWidth) solid var(--clockOneRightBorderColor);
+    border-bottom: var(--clocksBorderWidth) solid var(--clockOneBottomBorderColor);
+    border-left: var(--clocksBorderWidth) solid var(--clockOneLeftBorderColor);
+    padding: 7px;
+    border-radius: var(--clocksOuterRadius);
+    height:102px;
+    width: fit-content;
+}
+
+
+
+
+.clock-1-container-inner-wrapper-front {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-1-container-inner-wrapper-back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+}
+
+.display-inline-block-span {
+    display:inline-block;
+}
+
+.back-side-mark-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.digital-clock-1-top-margin {
+    margin-top: 30px;
+}
+
+.digital-clock-1-midd-margin {
+    margin-top: 14px;
+}
+
+.digital-clock-1-width {
+    width: 530px;
+}
+
+.digital-alarm-setter-bottom-section {
+    display: flex;
+    height: 60px;
+}
+
+.alarm-setter-bottom-left {
+    flex: 1 1 18%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.left-alarm-set-indicator {
+    height: 44px;
+    width: 38px;
+    background-color: var(--segmentOneColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alarm-setter-bottom-midd {
+    flex: 1 1 64%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    padding-top: 14px;
+}
+
+.alarm-setter-range-slider { 
+    flex: 0 1 60%;
+    align-self: center;
+    position:relative;
+}
+
+.temp-div-cillinder {
+    --sliderEndColor: #15c2ab;
+    --sliderMiddColor: #14bfa8;
+    position: absolute;
+    top: 3px;
+    left: 48px;
+    height: 1.6rem;
+    width: 1rem;
+    border-radius: 0.3rem;
+    background: linear-gradient(to right, var(--sliderEndColor), var(--sliderEndColor), var(--sliderMiddColor), var(--sliderMiddColor), var(--sliderMiddColor), var(--sliderEndColor));
+    box-shadow: 1px 2px 2px #8e8e8e, -2px 2px 4px #928c8c, 0 -2px 4px #928c8c;
+}
+
+.alarm-snooze-basic-div-button {
+    border: 3px solid var(--clockOneTogglesDarkGreen);
+    color: #64676b;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    cursor: pointer;
+    height:22px;
+}
+
+.alarm-snooze-button {
+    width:54px;
+    border-radius: 8px;
+    outline: 3px solid var(--clockOneTogglesBlueishGreenishBorder);
+    position:relative;
+}
+
+.alarm-snooze-wrapper {
+    width: 96%;
+}
+
+.alarm-on-off-snooze-panel {
+    display: flex;
+}
+
+.alarm-on-off-checkbox-panel {
+    flex: 1 1;
+}
+
+.alarm-snooze-active-color {
+    background-color: var(--segmentOneColor);
+}
+
+
+
+.alarm-snooze-button-panel {
+    flex: 0 1 60px;
+    padding-left: 3px;
+    align-self: center;
+}
+
+.alarm-setter-control-button-panel {
+    min-height: 22px;
+    flex: 0 1 68px;
+    /*background-color: #e48a20;*/
+    /*padding-top: 14px;*/
+    text-align: center;
+    align-self: center;
+}
+
+.alarm-setter-basic-button {
+    border: 3px solid var(--clockOneTogglesDarkGreen);
+    background-color: var(--clockOneTogglesLightGreen);
+    color: #64676b;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    cursor: pointer;
+}
+
+.alarm-setter-plus-button, .alarm-setter-minus-button {
+    width: 36px;
+    height: 21px;
+    font-size: 1.0rem;
+    line-height: 0;
+}
+
+.alarm-setter-plus-button {
+    border-radius: 8px 8px 0 0;
+}
+
+.alarm-setter-minus-button {
+    /* The "minus" sign does not center well vertically. */
+    /* Not as well as the "plus". So this is compensation. */
+    padding-bottom: 3px;
+    border-radius: 0 0 8px 8px;
+}
+
+.alarm-setter-main-button {
+    font-size: .8rem;
+    border-radius: 8px;
+    padding: 6px 6px;
+    outline: 3px solid var(--clockOneTogglesBlueishGreenishBorder);
+}
+
+.alarm-setter-bottom-right {
+    flex: 1 1 18%;  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alarm-setter-up-down-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 42px;
+    width: 36px;
+    background-color: #a7c5fb;
+    border-radius: 8px;
+    outline: 3px solid var(--clockOneTogglesBlueishGreenishBorder);
+}
+
+.span-alarm-setter-indicator {
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alarm-setter-top-section{
+
+    width:100%;
+}
+
+.indicator-wrapper-alarm-setter {
+    background-color: rgb(230, 85, 84, 1);
+    height: 22px;
+    position: relative;
+    z-index:110;
+}
+
+.indicator-alarm-setter-width {
+    width: 44px;
+}
+
+.digital-alarm-setter-panel {
+    width: 290px;
+    margin-left: 12px;
+    height: 62px;
+    /*margin-top:12px;*/
+    align-self: end;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: relative;
+    /*padding-top: 22px;*/
+}
+
+.alarm-setter-top-inner {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    position: absolute;
+    top:-13px;
+    width:100%;
+}
+
+.clock-1-digits-panel {
+    display: flex;
+}
+
+
+.digital-clock-alarm-panel {
+    width: 166px;
+    margin-left: 12px;
+    height: 62px;
+    /*margin-top:12px;*/
+    align-self: end;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: relative;
+    padding-top:23px;
+}
+
+
+.set-inactive-background-only {
+    background-color: rgb(230, 85, 84, .1);
+}
+
+
+
+.alarm-panel-top-marks {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    top: -13px;
+}
+
+
+.indicator-border-wrapper-b {
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+    background-color: var(--clockOneBackgroundColor);
+}
+
+.top-mark-off, .top-mark-alarm, .top-mark-on {
+    background-color: var(--segmentOneColor);
+    height: 22px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: .75rem;
+    line-height: 22px;
+    font-weight: bold;
+    position: relative;
+    z-index: 110;
+}
+
+.clocks-togglers-panel {
+    margin-left: 14px;
+    /*margin-right: 8px;*/
+}
+
+
+.toggler-top-inner-panel {
+}
+
+.toggler-bottom-inner-panel {
+    height: 28px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    /*background-color:bisque;*/
+}
+
+.togglers-vert-spacer {
+    height: 8px;
+}
+
+.clocks-am-pm-indicator-panel {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.indicator-border-wrapper-a {
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.indicator-border-wrapper-a-width {
+    width: 40px;
+}
+
+.indicator-wrapper-a {
+    background-color: var(--segmentOneColor);
+    height: 24px;
+}
+
+.set-inactive {
+    opacity: var(--segmentOneOpacity);
+}
+
+

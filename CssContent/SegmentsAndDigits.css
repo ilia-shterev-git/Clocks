@@ -1,0 +1,220 @@
+﻿
+:root {
+    --digitMiddRadius: 6px;
+    --digitBackgroundColor: rgb(78 78 78);
+    /*-----------------------------  --*/
+    /*-----------------------------  --*/
+    --vertSegmentWidth: 6px;
+    --vertSegmentTransparentBiggerBorder: 6px;
+    --vertSegmentTransparentSmallerBorder: 5px;
+    /*-------------------------------*/
+    --segmentOneOpacity: 0.1;
+    --segmentOneColor: rgb(230, 85, 84, 1.0);
+    --segmentOneColorInactive: rgb(230, 85, 84, var(--segmentOneOpacity));
+    --segmentOneInactiveColor: rgb(230, 85, 84, var(--segmentOneOpacity));
+    /*-------------------------------*/
+    /*-------------------------------*/
+    --topBottomHorizontalSegmentsHeight: 6px;
+}
+.digit-container {
+    margin-right: 7px;
+    /*padding-bottom: 8px;      var(--segmentOneColor)*/
+}
+
+.digits-pair-container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 7px;
+    /*each digit has its own marging right 7px bit this 1px is to compensate  */
+    /*for the digits being tilted (skew) to the right  */
+    padding-right: 1px;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    background-color: var(--digitBackgroundColor);
+    border-radius: 7px;
+    /*z-index: 22;*/
+}
+
+
+.digit-outer-wrapper {
+    width: var(--digitTotalWidth);
+    --digitOuterRadius: 7px;
+    border-radius: var(--digitOuterRadius);
+    overflow: hidden;
+    min-height: 40px;
+    transform: skew(-1.5deg);
+    z-index: 110;
+    position: relative;
+}
+
+.position-z-index {
+    z-index: 110;
+    position: relative;
+}
+
+.clock-1-segments-color {
+    /*   position:relative;    z-index: 122;*/
+    border-color: var(--segmentOneColor);
+}
+
+/*      Top AND Bottom horizontal segments var(--аааа)     */
+.horizontal-top-segment-a,
+.horizontal-bottom-segment-d {
+    height: var(--topBottomHorizontalSegmentsHeight);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+/*      Top horizontal segment - Only One Div     */
+.horizontal-top-segment-a {
+    border-top-width: var(--topBottomHorizontalSegmentsHeight);
+    border-top-style: solid;
+}
+
+.segment-a-margin-bottom-offset {
+    margin-bottom: -5px;
+}
+/*  END    Top AND Bottom horizontal segments      */
+/*  END    Top horizontal segment - Only One Div   digit-bottom-inner-wrapper  midd-bottom-segments-wrapper  */
+
+/*    All similar digits' parts  --digitMidFIllerWidth: 32px;  */
+.midd-top-segments-wrapper, .midd-bottom-segments-wrapper {
+    --vertSegmentHeight: 28px;
+    --digitTotalWidth: 28px;
+    height: var(--vertSegmentHeight);
+    overflow: hidden;
+    width: var(--digitTotalWidth);
+}
+
+.midd-top-segments-wrapper {
+    border-bottom-left-radius: var(--digitMiddRadius);
+    border-bottom-right-radius: var(--digitMiddRadius);
+}
+
+    .midd-top-segments-wrapper .vert-left-segment-f,
+    .midd-top-segments-wrapper .vert-right-segment-b {
+        border-top: var(--vertSegmentTransparentBiggerBorder) solid transparent;
+        border-bottom: var(--vertSegmentTransparentSmallerBorder) solid transparent;
+        height: 100%;
+    }
+
+    .midd-top-segments-wrapper .vert-left-segment-f {
+        border-left-width: var(--vertSegmentWidth);
+        border-left-style: solid;
+    }
+
+    .midd-top-segments-wrapper .vert-right-segment-b {
+        border-right-width: var(--vertSegmentWidth);
+        border-right-style: solid;
+    }
+
+.midd-bottom-segments-wrapper {
+    border-top-left-radius: var(--digitMiddRadius);
+    border-top-right-radius: var(--digitMiddRadius);
+}
+
+    .midd-bottom-segments-wrapper .vert-left-segment-e,
+    .midd-bottom-segments-wrapper .vert-right-segment-c {
+        border-top: var(--vertSegmentTransparentSmallerBorder) solid transparent;
+        border-bottom: var(--vertSegmentTransparentBiggerBorder) solid transparent;
+        height: 100%;
+    }
+
+    .midd-bottom-segments-wrapper .vert-left-segment-e {
+        border-left-width: var(--vertSegmentWidth);
+        border-left-style: solid;
+    }
+
+    .midd-bottom-segments-wrapper .vert-right-segment-c {
+        border-right-width: var(--vertSegmentWidth);
+        border-right-style: solid;
+    }
+
+/*  END    All similar digits' parts  */
+
+
+.horizontal-segment-g-wrapper {
+    margin: -4px auto -5px auto;
+    width: 22px;
+    height: 7px;
+    /*background-color:#ff6a00;*/
+    overflow: hidden;
+}
+
+.horizontal-segment-g, .horizontal-segment-g::before {
+    width: 24px;
+    --horizontalGSegmentLeftRightBorder: 6px;
+    border-left: var(--horizontalGSegmentLeftRightBorder) solid transparent;
+    border-right: var(--horizontalGSegmentLeftRightBorder) solid transparent;
+}
+
+.horizontal-segment-g {
+    margin-left: -1px;
+    --horizontalGSegmentHalfHeight: 3px;
+    height: var(--horizontalGSegmentHalfHeight);
+    /*margin: auto auto auto auto;     var(--horizotalGSegmentLeftRightBorder)     */
+    border-bottom-width: var(--horizontalGSegmentHalfHeight);
+    border-bottom-style: solid;
+}
+
+    .horizontal-segment-g::before {
+        height: var(--horizontalGSegmentHalfHeight);
+        position: relative;
+        display: block;
+        content: '';
+        top: var(--horizontalGSegmentHalfHeight);
+        left: -6px;
+        border-top-width: var(--horizontalGSegmentHalfHeight);
+        border-top-style: solid;
+        border-top-color: inherit;
+    }
+
+
+/*      Bottom horizontal segment - Only One Div    */
+.horizontal-bottom-segment-d {
+    border-bottom-width: var(--topBottomHorizontalSegmentsHeight);
+    border-bottom-style: solid;
+}
+
+.segment-d-margin-top-offset {
+    margin-top: -5px;
+}
+/*  END    Bottom horizontal segment - Only One Div    */
+
+/*      The two vertical dots area    */
+
+.dots-container-flex-version {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 60px;
+    align-self: center;
+}
+
+.dots-container-spacer-version {
+    align-self: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+    .dots-container-spacer-version .dots-vert-spacer {
+        height: var(--dotsSpacerHeight);
+    }
+
+.top-dot, .bottom-dot {
+    width: var(--dotsSize);
+    height: var(--dotsSize);
+    background-color: var(--segmentOneColor);
+    border-radius: 3px;
+}
+
+.dim-dots .top-dot, .dim-dots .bottom-dot {
+    opacity: var(--segmentOneOpacity);
+}
+/*     END    The two vertical dots area    */
+
+
+

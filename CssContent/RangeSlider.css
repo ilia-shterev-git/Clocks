@@ -1,0 +1,51 @@
+﻿
+.alarm-setter-range-slider-inner {
+    text-align: center;
+    background-color: var(--clockOneTogglesLightGreen);
+    border: 3px solid var(--clockOneTogglesDarkGreen);
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 89%;
+    float: right;
+    outline: 3px solid var(--clockOneTogglesBlueishGreenishBorder);
+}
+
+
+/*Range Reset*/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+
+
+    /* slider track */
+    input[type="range"]::-webkit-slider-runnable-track {
+        background-color: var(--clockOneTogglesBeigishMidd);
+        border-radius: 3px;
+        height: 0.4rem;
+        margin-bottom:2px;
+
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        --sliderEndColor: #15c2ab;
+        --sliderMiddColor: #14bfa8;
+        -webkit-appearance: none; /* Override default look  var(--clockOneTogglesBeigishMidd)    var(--clockOneTogglesDarkGreen)   */
+        appearance: none;
+        margin-top: -10px; /* Centers thumb on the track    #09895e #033871   #2b5429 */
+        /*custom styles*/
+        background: linear-gradient(to right, #f26706, #cf5804, #cf5804, #f26706);
+        height: 1.6rem;
+        width: 1rem;
+        border-radius: 0.3rem;
+        background: linear-gradient(to right, var(--sliderEndColor), var(--sliderEndColor), var(--sliderMiddColor), var(--sliderMiddColor), var(--sliderMiddColor), var(--sliderEndColor));
+        box-shadow: 1px 2px 2px #8e8e8e, -2px 2px 4px #928c8c, 0 -2px 4px #928c8c;
+    }
+
+input[type="range"] {
+    cursor: pointer;
+    outline: none;
+    width: 80px;
+}

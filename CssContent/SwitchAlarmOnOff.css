@@ -1,0 +1,20 @@
+﻿
+
+.center-switch {
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.alarm-switch input:checked + label {
+    color: #000;
+    /*text-shadow: 0 1px 0 rgba(255, 255, 255, .5);*/
+}
+
+.alarm-switch input:focus + label {
+    outline: none;
+}
+
+.alarm-switch input:last-of-type:checked ~ .switch-button {
+    left: 50%;
+}

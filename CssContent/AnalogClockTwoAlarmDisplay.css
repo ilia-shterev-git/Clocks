@@ -1,0 +1,159 @@
+﻿
+.analog-alarm-time-display {
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: flex;
+    width:fit-content;
+}
+
+.alarm-time-display-left-panel, .alarm-time-display-right-panel {
+    width: 1.6rem;
+    height: 1.2rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    position:relative;
+}
+
+.alarm-time-display-midd-panel {
+    height: 1rem;
+    width: 2px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin:auto 2px;
+}
+/* {
+    height: 1.2rem;
+    width: 2.0rem;
+    border: 1px solid black;
+    border-radius: 3px;
+}*/
+
+/* ======================= Begin Alarm Setter's Plus and Minus Buttons =================*/
+.analog-clock-two-section
+.analog-clock-two-right-buttons-panel
+.analog-alarm-setter-basic-button {
+    border: 3px solid var(--clockOneTogglesBeigishMidd);
+    background-color: var(--analogClockThemeColor);
+    color: #e2ffb1;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.analog-clock-two-section
+.analog-clock-two-right-buttons-panel
+.analog-alarm-setter-plus-button {
+    border-radius: 8px 8px 0 0;
+}
+
+.analog-clock-two-section
+.analog-clock-two-right-buttons-panel
+.analog-alarm-setter-minus-button {
+    padding-bottom: 3px;
+    border-radius: 0 0 8px 8px;
+}
+
+.analog-clock-two-section
+.analog-clock-two-right-buttons-panel
+.analog-alarm-setter-plus-button, .analog-alarm-setter-minus-button {
+    width: 36px;
+    height: 21px;
+    font-size: 1.0rem;
+    line-height: 0;
+}
+
+
+.analog-clock-two-section
+.analog-clock-two-right-buttons-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 42px;
+    width: 36px;
+    margin-top: 12px;
+    margin-left: 14px;
+    border-radius: 8px;
+    outline: 3px solid var(--analogClockThemeColor);
+}
+
+.analog-clock-two-off span, .analog-clock-two-on span {
+    font-weight: bold;
+    font-size: 0.6rem
+}
+
+.analog-clock-two-off, .analog-clock-two-on {
+    height: 12px;
+    position: relative;
+    background-color: var(--clockOneTogglesBeigishMidd);
+}
+
+.analog-clock-two-off {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.analog-clock-two-on {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.analog-clock-two-on-off-button-border {
+    border-bottom: 3px solid var(--analogClockThemeColor);
+}
+
+.analog-clock-two-on-off-button-bottom {
+    height: 1px;
+    background-color: var(--analogClockThemeColor);
+}
+
+.analog-clock-two-off-position {
+    transform: translateY(14px);
+}
+
+.analog-clock-two-on-off-button-platform {
+    width: 54px;
+    height: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--analogClockThemeColor);
+    position: relative;
+    top: 8px;
+    z-index: 2;
+}
+
+.analog-clock-two-on-off-button {
+    cursor: pointer;
+    width: 40px;
+    /*height: 34px;*/
+    background-color: var(--analogClockThemeColor);
+    border: 3px solid var(--analogClockThemeColor);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    top:9px;
+    transition: transform .3s;
+    z-index: 1;
+}
+
+.analog-clock-two-section {
+    margin: 22px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analog-clock-two-section-inner {
+    display: flex;
+}
+
+.analog-clock-two-left-panel, .analog-clock-two-right-panel {
+    width: 100px;
+}
+
+.analog-clock-two-right-panel {
+
+}
+
+/* ======================= End Alarm Setter's Plus and Minus Buttons =================*/

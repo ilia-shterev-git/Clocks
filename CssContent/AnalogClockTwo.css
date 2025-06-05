@@ -1,0 +1,304 @@
+﻿
+
+:root {
+
+    --alarmHandBgColor: #00294a;
+    --analogClockThemeColor: #029887;
+    --analogClockGlowingColor: aqua;
+}
+
+.analog-clock-wrapper {
+    overflow: hidden;
+    position: relative;
+    z-index: 12;
+}
+
+.analog-clock {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    border: 8px solid var(--analogClockThemeColor);
+    overflow:hidden;
+    position: relative;
+}
+
+    .analog-clock::before {
+        content: '';
+        position: absolute;
+        width: 56%;
+        height: 56%;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--analogClockThemeColor); /*#029887*/
+        z-index: 20;
+    }
+
+    .analog-clock .dial-base {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 10;
+    }
+
+    .analog-clock .hour-bar, .analog-clock .second-bar {
+        --dialBarsRotation: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0px;
+        transform: rotate(var(--dialBarsRotation));
+        z-index: 20;
+    }
+
+        .analog-clock .hour-bar span, .analog-clock .second-bar span {
+            display: inline-block;
+            background-color: var(--analogClockThemeColor);
+        }
+
+        .analog-clock .hour-bar span {
+            width: 3px;
+            height: 12px;
+        }
+
+        .analog-clock .second-bar span {
+            width: 1px;
+            height: 10px;
+        }
+
+    .analog-clock .number {
+        --digitsSpatialOrientationRotation: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transform: rotate(var(--digitsSpatialOrientationRotation));
+        padding: 24px;
+        z-index: 20;
+    }
+
+    .analog-clock .number span {
+        --digitsVerticalOrientationRotation:0;
+        display: inline-block;
+        transform: rotate(var(--digitsVerticalOrientationRotation));
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+/*  ========= Dial Section - Digits Spatial and Vertical Orientation Bars Spatial Orientation  ========= */
+
+    .analog-clock .number1 {
+        --digitsSpatialOrientationRotation: 30deg;
+    }
+
+        .analog-clock .number1 span {
+            --digitsVerticalOrientationRotation: -30deg;
+        }
+
+    .analog-clock .number2 {
+        --digitsSpatialOrientationRotation: 60deg;
+    }
+
+        .analog-clock .number2 span {
+            --digitsVerticalOrientationRotation: -60deg;
+        }
+
+    .analog-clock .number3 {
+        --digitsSpatialOrientationRotation: 90deg;
+    }
+
+        .analog-clock .number3 span {
+            --digitsVerticalOrientationRotation: -90deg;
+        }
+
+    .analog-clock .number4 {
+        --digitsSpatialOrientationRotation: 120deg;
+    }
+
+        .analog-clock .number4 span {
+            --digitsVerticalOrientationRotation: -120deg;
+        }
+
+    .analog-clock .number5 {
+        --digitsSpatialOrientationRotation: 150deg;
+    }
+
+        .analog-clock .number5 span {
+            --digitsVerticalOrientationRotation: -150deg;
+        }
+
+    .analog-clock .number6 {
+        --digitsSpatialOrientationRotation: 180deg;
+    }
+
+    .analog-clock .number7 {
+        --digitsSpatialOrientationRotation: 210deg;
+    }
+
+        .analog-clock .number7 span {
+            --digitsVerticalOrientationRotation: -210deg;
+        }
+
+    .analog-clock .number8 {
+        --digitsSpatialOrientationRotation: 240deg;
+    }
+
+        .analog-clock .number8 span {
+            --digitsVerticalOrientationRotation: -240deg;
+        }
+
+    .analog-clock .number9 {
+        --digitsSpatialOrientationRotation: 270deg;
+    }
+        .analog-clock .number9 span {
+            --digitsVerticalOrientationRotation: -270deg;
+        }
+
+    .analog-clock .number10 {
+        --digitsSpatialOrientationRotation: 300deg;
+    }
+
+        .analog-clock .number10 span {
+            --digitsVerticalOrientationRotation: -300deg;
+        }
+
+    .analog-clock .number11 {
+        --digitsSpatialOrientationRotation: 330deg;
+    }
+
+        .analog-clock .number11 span {
+            --digitsVerticalOrientationRotation: -330deg;
+        }
+
+    .analog-clock .bar2 {
+        --dialBarsRotation: 6deg;
+    }
+
+    .analog-clock .bar3 {
+        --dialBarsRotation: 12deg;
+    }
+
+    .analog-clock .bar4 {
+        --dialBarsRotation: 18deg;
+    }
+
+    .analog-clock .bar5 {
+        --dialBarsRotation: 24deg;
+    }
+
+    .analog-clock .bar6 {
+        --dialBarsRotation: 30deg;
+    }
+
+    .analog-clock .bar7 {
+        --dialBarsRotation: 36deg;
+    }
+
+    .analog-clock .bar8 {
+        --dialBarsRotation: 42deg;
+    }
+
+    .analog-clock .bar9 {
+        --dialBarsRotation: 48deg;
+    }
+
+    .analog-clock .bar10 {
+        --dialBarsRotation: 54deg;
+    }
+
+    .analog-clock .bar11 {
+        --dialBarsRotation: 60deg;
+    }
+
+    .analog-clock .bar12 {
+        --dialBarsRotation: 66deg;
+    }
+
+    .analog-clock .bar13 {
+        --dialBarsRotation: 72deg;
+    }
+
+    .analog-clock .bar14 {
+        --dialBarsRotation: 78deg;
+    }
+
+    .analog-clock .bar15 {
+        --dialBarsRotation: 84deg;
+    }
+
+    .analog-clock .bar16 {
+        --dialBarsRotation: 90deg;
+    }
+
+    .analog-clock .bar31 {
+        --dialBarsRotation: 180deg;
+    }
+
+    .analog-clock .bar32 {
+        --dialBarsRotation: 186deg;
+    }
+
+    .analog-clock .bar33 {
+        --dialBarsRotation: 192deg;
+    }
+
+    .analog-clock .bar34 {
+        --dialBarsRotation: 198deg;
+    }
+
+    .analog-clock .bar35 {
+        --dialBarsRotation: 204deg;
+    }
+
+    .analog-clock .bar36 {
+        --dialBarsRotation: 210deg;
+    }
+
+    .analog-clock .bar37 {
+        --dialBarsRotation: 216deg;
+    }
+
+    .analog-clock .bar38 {
+        --dialBarsRotation: 222deg;
+    }
+
+    .analog-clock .bar39 {
+        --dialBarsRotation: 228deg;
+    }
+
+    .analog-clock .bar40 {
+        --dialBarsRotation: 234deg;
+    }
+
+    .analog-clock .bar41 {
+        --dialBarsRotation: 240deg;
+    }
+
+    .analog-clock .bar42 {
+        --dialBarsRotation: 246deg;
+    }
+
+    .analog-clock .bar43 {
+        --dialBarsRotation: 252deg;
+    }
+
+    .analog-clock .bar44 {
+        --dialBarsRotation: 258deg;
+    }
+
+    .analog-clock .bar45 {
+        --dialBarsRotation: 264deg;
+    }
+
+    .analog-clock .bar46 {
+        --dialBarsRotation: 270deg;
+    }
+/*  End Dial Section - Digits Spatial and Vertical Orientation Bars Spatial Orientation */
