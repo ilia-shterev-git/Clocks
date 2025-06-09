@@ -29,7 +29,7 @@
 
 html, body {
     /*height: 100%;*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Verdana, sans-serif;
 }
 
 body {
@@ -76,6 +76,7 @@ a {
     border-radius: 7px;
     background-color: #e4fdff;
     border: 2px solid black;
+    font-size: 0.8rem;
 }
 
 .button-holder-section {
@@ -98,6 +99,7 @@ a {
     background-color: #e4fdff;
     border: 2px solid black;
     min-width:150px;
+    font-size: 0.8rem;
 }
 
 .opacity-zero {
