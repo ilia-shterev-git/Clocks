@@ -47,7 +47,13 @@
     font-weight: bold;
 }
 
+
 .font-size-07-bold {
     font-size: 0.60rem;
+    font-weight: bold;
+}
+
+.font-size-084-bold {
+    font-size: 0.84rem;
     font-weight: bold;
 }
