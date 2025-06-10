@@ -364,7 +364,7 @@ a {
 
 .manual-writing-note {
     font-family: manualWriting;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     text-align: center;
     font-weight: bold;
     opacity: 0.7;
@@ -379,7 +379,7 @@ a {
 
 .type-writing-note {
     font-family: typeWriting;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     text-align: center;
     /*opacity:0.1;*/
 
